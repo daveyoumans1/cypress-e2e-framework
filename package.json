@@ -1,0 +1,15 @@
+{
+  "name": "cypress-e2e-framework",
+  "version": "1.0.0",
+  "description": "Cypress E2E test framework — Page Object Model, custom commands, CI/CD",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox",
+    "cy:run:headed": "cypress run --headed"
+  },
+  "devDependencies": {
+    "cypress": "^13.10.0"
+  }
+}
