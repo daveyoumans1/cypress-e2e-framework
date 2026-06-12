@@ -3,6 +3,9 @@ import InventoryPage from '../pages/InventoryPage'
 
 describe('Login', () => {
   beforeEach(() => {
+    cy.clearAllCookies()
+    cy.clearAllLocalStorage()
+    cy.clearAllSessionStorage()
     LoginPage.visit()
   })
 

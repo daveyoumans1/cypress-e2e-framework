@@ -15,7 +15,4 @@ beforeEach(() => {
         .catch(() => {})
     }
   })
-  cy.clearAllCookies()
-  cy.clearAllLocalStorage()
-  cy.clearAllSessionStorage()
 })
