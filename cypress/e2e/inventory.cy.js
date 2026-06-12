@@ -3,7 +3,6 @@ import InventoryPage from '../pages/InventoryPage'
 describe('Inventory', () => {
   beforeEach(() => {
     cy.loginAs('standard')
-    cy.visit('/')
     cy.url().should('include', '/inventory')
   })
 
