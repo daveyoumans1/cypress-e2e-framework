@@ -10,8 +10,10 @@ class LoginPage {
   }
 
   login(username, password) {
-    this.usernameInput.clear().type(username)
-    this.passwordInput.clear().type(password)
+    this.usernameInput.clear()
+    if (username) this.usernameInput.type(username)
+    this.passwordInput.clear()
+    if (password) this.passwordInput.type(password)
     this.loginButton.click()
     return this
   }

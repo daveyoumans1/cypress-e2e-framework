@@ -2,7 +2,12 @@ import LoginPage from '../pages/LoginPage'
 import InventoryPage from '../pages/InventoryPage'
 
 describe('Login', () => {
-  beforeEach(() => LoginPage.visit())
+  beforeEach(() => {
+    cy.clearAllCookies()
+    cy.clearAllLocalStorage()
+    cy.clearAllSessionStorage()
+    LoginPage.visit()
+  })
 
   it('allows standard user to log in', () => {
     LoginPage.login('standard_user', 'secret_sauce')
