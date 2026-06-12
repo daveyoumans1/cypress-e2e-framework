@@ -3,7 +3,7 @@ import InventoryPage from '../pages/InventoryPage'
 describe('Inventory', () => {
   beforeEach(() => {
     cy.loginAs('standard')
-    cy.visit('/inventory.html')
+    cy.visit('/inventory')
   })
 
   it('displays all 6 products', () => {
